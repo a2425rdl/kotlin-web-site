@@ -61,7 +61,7 @@ perspective
 > - 1.6.20: report a warning
 > - 1.8.0: raise the warning to an error
 
-### Deprecating old compiler option DSLs
+### Deprecate old compiler option DSLs
 
 > **Issue**: [KT-67234](https://youtrack.jetbrains.com/issue/KT-67234)
 >
@@ -69,12 +69,12 @@ perspective
 >
 > **Incompatible change type**: source
 >
-> **Short summary**:
+> **Short summary**: The ability to configure the `compilerOptions` property in the `kotlinCompilation` DSL has been deprecated. 
+> The `kotlinOptions` DSL has also been deprecated.
 >
 > **Deprecation cycle**:
 >
-> - 1.6.20: report a warning
-> - 1.8.0: raise the warning to an error
+> - 2.0.0: report a warning
 
 ### Gradle dependency handling of CInteropProcess
 
@@ -91,7 +91,7 @@ perspective
 > - 1.6.20: report a warning
 > - 1.8.0: raise the warning to an error
 
-### Remove `kotlin.useK2` Gradle property
+### Remove kotlin.useK2 Gradle property
 
 > **Issue**: [KT-67430](https://youtrack.jetbrains.com/issue/KT-67430)
 >
@@ -99,12 +99,12 @@ perspective
 >
 > **Incompatible change type**: source
 >
-> **Short summary**:
+> **Short summary**: The `kotlin.useK2` Gradle property has been removed.
 >
 > **Deprecation cycle**:
 >
-> - 1.6.20: report a warning
-> - 1.8.0: raise the warning to an error
+> - 1.8.20: the `kotlin.useK2` Gradle property is deprecated
+> - 2.0.0: the `kotlin.useK2` Gradle property is removed
 
 ### Remove deprecated platform plugin IDs
 
@@ -114,9 +114,15 @@ perspective
 >
 > **Incompatible change type**: source
 >
-> **Short summary**:
+> **Short summary**: support for these platform plugin IDs have been removed:
+> * `kotlin-platform-android`
+> * `kotlin-platform-jvm`
+> * `kotlin-platform-js`
+> * `org.jetbrains.kotlin.platform.android`
+> * `org.jetbrains.kotlin.platform.jvm`
+> * `org.jetbrains.kotlin.platform.js`
 >
 > **Deprecation cycle**:
 >
-> - 1.6.20: report a warning
-> - 1.8.0: raise the warning to an error
+> - 1.3: the platform plugin IDs are deprecated
+> - 2.0.0: the platform plugin IDs are no longer supported
