@@ -7,6 +7,7 @@ On this page, you can learn about the following topics:
 * [The Kotlin daemon and how to use it with Gradle](#the-kotlin-daemon-and-how-to-use-it-with-gradle)
 * [Defining Kotlin compiler execution strategy](#defining-kotlin-compiler-execution-strategy)
 * [Kotlin compiler fallback strategy](#kotlin-compiler-fallback-strategy)
+* [Trying the latest language version](#trying-the-latest-language-version)
 * [Build reports](#build-reports)
 
 ## Incremental compilation
@@ -416,6 +417,13 @@ tasks.named("compileKotlin").configure {
 </tabs>
 
 If there is insufficient memory to run the compilation, you can see a message about it in the logs.
+
+## Trying the latest language version
+
+Starting with Kotlin 2.0.0, to try the latest language version, set the `kotlin.experimental.tryNext` property in your `gradle.properties`
+file. When you use this property, the Kotlin Gradle plugin increments the language version to one above the default value
+for your Kotlin version. For example, in Kotlin 2.0.0, the default language version is 2.0, so the property configures 
+language version 2.1.
 
 ## Build reports
 
