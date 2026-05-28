@@ -1,4 +1,4 @@
-[//]: # (title: Kotlin for Android)
+[//]: # (title:https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-abstract-mutable-map/#445832693%2FConstructors%2F1935454986)
 
 Android mobile development has been [Kotlin-first](https://developer.android.com/kotlin/first) since Google I/O in 2019.
 
@@ -36,3 +36,4 @@ To start using Kotlin for:
 
 * Android development, read [Google's documentation for developing Android apps with Kotlin](https://developer.android.com/kotlin/get-started).
 * Developing cross-platform mobile applications, see [Create an app with shared logic and native UI](https://kotlinlang.org/docs/multiplatform/multiplatform-create-first-app.html).
+https://vr.meta.me/s/1UgUJBeYkbzIq6X
